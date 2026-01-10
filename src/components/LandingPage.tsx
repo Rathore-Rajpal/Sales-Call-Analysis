@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Upload, BarChart3, Users, Zap, Shield, ArrowRight, TrendingUp } from "lucide-react";
+import { CheckCircle, Upload, BarChart3, Users, Zap, Shield, ArrowRight, TrendingUp, HelpCircle } from "lucide-react";
+import Footer from "./Footer";
 
 interface LandingPageProps {
   onGetStarted: () => void;
+  onShowGuide?: () => void;
 }
 
-export default function LandingPage({ onGetStarted }: LandingPageProps) {
-
+export default function LandingPage({ onGetStarted, onShowGuide }: LandingPageProps) {
   const features = [
     {
       icon: Upload,
@@ -62,7 +63,18 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent-blue bg-clip-text text-transparent">GrowthLens</span>
             </div>
-            <div>
+            <div className="flex items-center gap-3">
+              {onShowGuide && (
+                <Button 
+                  variant="ghost"
+                  size="default" 
+                  onClick={onShowGuide}
+                  className="gap-2"
+                >
+                  <HelpCircle className="h-4 w-4" />
+                  How It Works
+                </Button>
+              )}
               <Button 
                 size="default" 
                 onClick={onGetStarted}
@@ -278,26 +290,7 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
         </div>
       </section>
 
-      <footer className="border-t bg-card px-6 py-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex items-center space-x-3 mb-4 md:mb-0">
-              <div className="bg-gradient-to-br from-primary to-accent-blue p-2 rounded-lg">
-                <TrendingUp className="h-6 w-6 text-white" />
-              </div>
-              <div>
-                <p className="font-semibold text-foreground">GrowthLens</p>
-                <p className="text-sm text-muted-foreground">AI Powered. Growth Driven.</p>
-              </div>
-            </div>
-            <div className="text-center md:text-right">
-              <p className="text-sm text-muted-foreground">
-                © 2026 GrowthLens. All rights reserved.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

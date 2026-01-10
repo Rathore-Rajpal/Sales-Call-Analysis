@@ -15,6 +15,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/lib/supabase";
 import type { Project, ProjectMetadata, ProjectDocument } from "@/lib/supabase";
 import { storeProjectEmbedding, prepareProjectMetadataForEmbedding, deleteProjectEmbeddingsByType } from "@/lib/projectEmbeddings";
+import Footer from "./Footer";
 import {
   Brain,
   Save,
@@ -1309,6 +1310,7 @@ ROI Talking Points:
         </DialogContent>
       </Dialog>
       </div>
+      <Footer />
     </div>
   );
 }

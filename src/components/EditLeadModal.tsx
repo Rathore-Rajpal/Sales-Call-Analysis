@@ -34,6 +34,7 @@ export default function EditLeadModal({ lead, isOpen, onClose }: EditLeadModalPr
     email: "",
     contact: "",
     description: "",
+    lead_type: "Warm" as "Hot" | "Warm" | "Warm-Cold" | "Cold",
     group_id: "none",
   });
 
@@ -48,6 +49,7 @@ export default function EditLeadModal({ lead, isOpen, onClose }: EditLeadModalPr
         email: lead.email || "",
         contact: lead.contact || "",
         description: lead.description || "",
+        lead_type: lead.lead_type || "Warm",
         group_id: lead.group_id || "none",
       });
     }
@@ -72,6 +74,7 @@ export default function EditLeadModal({ lead, isOpen, onClose }: EditLeadModalPr
         email: formData.email.trim(),
         contact: formData.contact.trim(),
         description: formData.description.trim() || undefined,
+        lead_type: formData.lead_type,
         group_id: formData.group_id !== "none" ? formData.group_id : undefined,
       });
 
@@ -144,6 +147,46 @@ export default function EditLeadModal({ lead, isOpen, onClose }: EditLeadModalPr
               placeholder="Enter additional notes about this lead"
               rows={3}
             />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="lead_type">Lead Type *</Label>
+            <Select
+              value={formData.lead_type}
+              onValueChange={(value: "Hot" | "Warm" | "Warm-Cold" | "Cold") =>
+                setFormData({ ...formData, lead_type: value })
+              }
+            >
+              <SelectTrigger>
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="Hot">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                    Hot
+                  </div>
+                </SelectItem>
+                <SelectItem value="Warm">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                    Warm
+                  </div>
+                </SelectItem>
+                <SelectItem value="Warm-Cold">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
+                    Warm-Cold
+                  </div>
+                </SelectItem>
+                <SelectItem value="Cold">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                    Cold
+                  </div>
+                </SelectItem>
+              </SelectContent>
+            </Select>
           </div>
 
           <div className="space-y-2">

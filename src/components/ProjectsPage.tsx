@@ -7,6 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/lib/supabase";
 import type { Project, ProjectWithMetadata } from "@/lib/supabase";
+import Footer from "./Footer";
 import {
   Plus,
   Search,
@@ -696,6 +697,6 @@ export default function ProjectsPage({ onViewProject, onBack }: ProjectsPageProp
         </DialogContent>
       </Dialog>
     </div>
-    </div>
+      <Footer />
   );
 }

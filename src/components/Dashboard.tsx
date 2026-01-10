@@ -4,11 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { Upload, Play, Download, MoreHorizontal, TrendingUp, TrendingDown, Users, Phone, Star, AlertTriangle, Trash2, BarChart3, Loader2, User, UserPlus, FolderOpen, FileSpreadsheet, RefreshCw, Smile, Meh, Frown, Flame, ThumbsUp, ThumbsDown, Zap, HelpCircle, AlertCircle, Clock, Brain, FolderKanban } from "lucide-react";
+import { Upload, Play, Download, MoreHorizontal, TrendingUp, TrendingDown, Users, Phone, Star, AlertTriangle, Trash2, BarChart3, Loader2, User, UserPlus, FolderOpen, FileSpreadsheet, RefreshCw, Smile, Meh, Frown, Flame, ThumbsUp, ThumbsDown, Zap, HelpCircle, AlertCircle, Clock, Brain, FolderKanban, FileText } from "lucide-react";
 import { useDashboardStats, useRecordings, useAnalyses, useDeleteRecording, useLeads } from "@/hooks/useSupabaseData";
 import AddRecordingModal from "./AddRecordingModal";
 import AllLeadsPage from "./AllLeadsPage";
 import LeadGroupsPage from "./LeadGroupsPage";
+import SampleTranscriptsModal from "./SampleTranscriptsModal";
+import { useSampleTranscripts } from "@/hooks/useSampleTranscripts";
+import Footer from "./Footer";
 import { useQueryClient } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
 import { useAnalysisNotifications } from "@/hooks/useAnalysisNotifications";
@@ -20,9 +23,10 @@ interface DashboardProps {
   onShowProfile?: () => void;
   onShowBrain?: () => void;
   onShowProjects?: () => void;
+  onShowGuide?: () => void;
 }
 
-export default function Dashboard({ onShowProfile, onShowBrain, onShowProjects }: DashboardProps) {
+export default function Dashboard({ onShowProfile, onShowBrain, onShowProjects, onShowGuide }: DashboardProps) {
   const [searchParams, setSearchParams] = useSearchParams();
   const initialTab = searchParams.get('tab') || 'overview';
   const [selectedTab, setSelectedTab] = useState(initialTab);
@@ -36,6 +40,11 @@ export default function Dashboard({ onShowProfile, onShowBrain, onShowProjects }
   const { toast } = useToast();
   const navigate = useNavigate();
   const { user } = useAuth();
+  
+  // Sample Transcripts modal state
+  const { data: sampleTranscripts } = useSampleTranscripts();
+  const [selectedTranscript, setSelectedTranscript] = useState<any>(null);
+  const [transcriptModalOpen, setTranscriptModalOpen] = useState(false);
   
   // Calculate lead counts from leads table
   const totalLeads = leads?.length || 0;
@@ -286,13 +295,24 @@ export default function Dashboard({ onShowProfile, onShowBrain, onShowProjects }
               </div>
             </div>
           </div>
-          <Button 
-            variant="ghost"
-            onClick={() => window.location.href = '/'}
-            className="text-muted-foreground hover:text-foreground hover:bg-gray-50 font-medium transition-all"
-          >
-            Logout
-          </Button>
+          <div className="flex items-center gap-3">
+            {onShowGuide && (
+              <Button 
+                variant="outline"
+                onClick={onShowGuide}
+                className="text-primary border-primary/20 hover:bg-primary/10 font-medium transition-all"
+              >
+                How It Works
+              </Button>
+            )}
+            <Button 
+              variant="ghost"
+              onClick={() => window.location.href = '/'}
+              className="text-muted-foreground hover:text-foreground hover:bg-gray-50 font-medium transition-all"
+            >
+              Logout
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -345,6 +365,16 @@ export default function Dashboard({ onShowProfile, onShowBrain, onShowProjects }
               >
                 <Brain className="h-4 w-4 mr-3" />
                 Company Brain
+              </Button>
+              
+              {/* Sample Transcripts Section */}
+              <Button 
+                variant="ghost"
+                className={`w-full justify-start font-medium text-sm transition-all ${selectedTab === "sample-transcripts" ? "bg-amber-50 text-amber-700 hover:bg-amber-100" : "text-muted-foreground hover:text-foreground hover:bg-gray-50"}`}
+                onClick={() => handleTabChange("sample-transcripts")}
+              >
+                <FileText className="h-4 w-4 mr-3" />
+                Sample Transcripts
               </Button>
           </nav>
         </aside>
@@ -890,6 +920,77 @@ export default function Dashboard({ onShowProfile, onShowBrain, onShowProjects }
                 </Tabs>
               </div>
             </TabsContent>
+
+            {/* Sample Transcripts Tab */}
+            <TabsContent value="sample-transcripts" className="space-y-6">
+              <div>
+                <div className="flex items-center justify-between mb-6">
+                  <div>
+                    <h1 className="text-3xl font-bold text-foreground">Sample Call Transcripts</h1>
+                    <p className="text-muted-foreground mt-2">Review example sales calls to understand analysis capabilities</p>
+                  </div>
+                </div>
+                
+                {!sampleTranscripts || sampleTranscripts.length === 0 ? (
+                  <Card>
+                    <CardContent className="pt-6">
+                      <div className="text-center py-12">
+                        <FileText className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
+                        <p className="text-muted-foreground">Loading sample transcripts...</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ) : (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {sampleTranscripts.map((transcript: any) => (
+                      <Card 
+                        key={transcript.id} 
+                        className="hover:shadow-lg transition-all cursor-pointer border-border"
+                        onClick={() => {
+                          setSelectedTranscript(transcript);
+                          setTranscriptModalOpen(true);
+                        }}
+                      >
+                        <CardHeader>
+                          <div className="flex items-start justify-between mb-2">
+                            <Badge 
+                              variant="outline" 
+                              className={`
+                                ${transcript.category === 'Hot' ? 'bg-red-50 text-red-700 border-red-200' : ''}
+                                ${transcript.category === 'Warm' ? 'bg-green-50 text-green-700 border-green-200' : ''}
+                                ${transcript.category === 'Warm-Cold' ? 'bg-yellow-50 text-yellow-700 border-yellow-200' : ''}
+                                ${transcript.category === 'Cold' ? 'bg-blue-50 text-blue-700 border-blue-200' : ''}
+                              `}
+                            >
+                              {transcript.category}
+                            </Badge>
+                          </div>
+                          <CardTitle className="text-lg">{transcript.title}</CardTitle>
+                          <CardDescription className="line-clamp-2">
+                            {transcript.description}
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="space-y-3">
+                            <div className="flex flex-wrap gap-1">
+                              {transcript.tags?.slice(0, 3).map((tag: string, idx: number) => (
+                                <Badge key={idx} variant="secondary" className="text-xs">
+                                  {tag}
+                                </Badge>
+                              ))}
+                            </div>
+                            <div className="flex items-center justify-between text-xs text-muted-foreground">
+                              <span>{transcript.transcript?.length.toLocaleString()} characters</span>
+                              <span>{new Date(transcript.created_at).toLocaleDateString()}</span>
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </TabsContent>
           </Tabs>
         </main>
       </div>
@@ -900,6 +1001,21 @@ export default function Dashboard({ onShowProfile, onShowBrain, onShowProjects }
         onOpenChange={setIsAddModalOpen}
         onRecordingAdded={handleRecordingAdded}
       />
+      
+      {/* Sample Transcripts Modal */}
+      <SampleTranscriptsModal
+        transcript={selectedTranscript}
+        open={transcriptModalOpen}
+        onOpenChange={setTranscriptModalOpen}
+        onUseTranscript={(text) => {
+          // Close the sample transcript modal
+          setTranscriptModalOpen(false);
+          // Open the add recording modal with pre-filled transcript
+          setIsAddModalOpen(true);
+          // Note: We'll need to pass the transcript text to AddRecordingModal
+        }}
+      />
+      <Footer />
     </div>
   );
 }

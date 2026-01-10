@@ -6,8 +6,9 @@ import ProfilePage from "@/components/ProfilePage";
 import BrainPage from "@/components/BrainPage";
 import ProjectsPage from "@/components/ProjectsPage";
 import ProjectBrainPage from "@/components/ProjectBrainPage";
+import AnalysisGuidePage from "@/components/AnalysisGuidePage";
 
-type ViewType = 'landing' | 'dashboard' | 'profile' | 'brain' | 'projects' | 'project-brain';
+type ViewType = 'landing' | 'dashboard' | 'profile' | 'brain' | 'projects' | 'project-brain' | 'guide';
 
 const Index = () => {
   const [searchParams] = useSearchParams();
@@ -51,6 +52,10 @@ const Index = () => {
     setCurrentView('projects');
   };
 
+  const handleShowGuide = () => {
+    setCurrentView('guide');
+  };
+
   const handleViewProjectBrain = (projectId: string) => {
     setSelectedProjectId(projectId);
     setCurrentView('project-brain');
@@ -67,7 +72,7 @@ const Index = () => {
   // Render based on current view
   switch (currentView) {
     case 'landing':
-      return <LandingPage onGetStarted={handleGetStarted} />;
+      return <LandingPage onGetStarted={handleGetStarted} onShowGuide={handleShowGuide} />;
     
     case 'profile':
       return <ProfilePage onBack={handleBackToDashboard} />;
@@ -78,6 +83,9 @@ const Index = () => {
     case 'projects':
       return <ProjectsPage onViewProject={handleViewProjectBrain} onBack={handleBackToDashboard} />;
     
+    case 'guide':
+      return <AnalysisGuidePage onBack={handleBackToDashboard} />;
+    
     case 'project-brain':
       return selectedProjectId ? (
         <ProjectBrainPage projectId={selectedProjectId} onBack={handleBackToProjects} />
@@ -86,7 +94,7 @@ const Index = () => {
       );
     
     case 'dashboard':
-      return <Dashboard onShowProfile={handleShowProfile} onShowBrain={handleShowBrain} onShowProjects={handleShowProjects} />;
+      return <Dashboard onShowProfile={handleShowProfile} onShowBrain={handleShowBrain} onShowProjects={handleShowProjects} onShowGuide={handleShowGuide} />;
     
     default:
       return <LandingPage onGetStarted={handleGetStarted} />;

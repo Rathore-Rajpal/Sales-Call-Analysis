@@ -37,6 +37,7 @@ export default function AddLeadModal({ isOpen, onClose, defaultGroupId, onLeadAd
     contact: "",
     description: "",
     group_id: defaultGroupId || "none",
+    lead_type: "Warm" as "Hot" | "Warm" | "Warm-Cold" | "Cold",
   });
   const [isCreatingGroup, setIsCreatingGroup] = useState(false);
   const [newGroupName, setNewGroupName] = useState("");
@@ -65,6 +66,7 @@ export default function AddLeadModal({ isOpen, onClose, defaultGroupId, onLeadAd
         contact: formData.contact.trim(),
         description: formData.description.trim() || undefined,
         group_id: formData.group_id !== "none" ? formData.group_id : undefined,
+        lead_type: formData.lead_type,
       });
 
       toast({
@@ -79,6 +81,7 @@ export default function AddLeadModal({ isOpen, onClose, defaultGroupId, onLeadAd
         contact: "",
         description: "",
         group_id: defaultGroupId || "none",
+        lead_type: "Warm",
       });
 
       // Call callback with new lead ID
@@ -103,6 +106,7 @@ export default function AddLeadModal({ isOpen, onClose, defaultGroupId, onLeadAd
       contact: "",
       description: "",
       group_id: defaultGroupId || "none",
+      lead_type: "Warm",
     });
     setIsCreatingGroup(false);
     setNewGroupName("");
@@ -201,6 +205,46 @@ export default function AddLeadModal({ isOpen, onClose, defaultGroupId, onLeadAd
               placeholder="Enter additional notes about this lead"
               rows={3}
             />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="lead_type">Lead Type *</Label>
+            <Select
+              value={formData.lead_type}
+              onValueChange={(value: "Hot" | "Warm" | "Warm-Cold" | "Cold") => 
+                setFormData({ ...formData, lead_type: value })
+              }
+            >
+              <SelectTrigger>
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="Hot">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                    Hot
+                  </div>
+                </SelectItem>
+                <SelectItem value="Warm">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                    Warm
+                  </div>
+                </SelectItem>
+                <SelectItem value="Warm-Cold">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
+                    Warm-Cold
+                  </div>
+                </SelectItem>
+                <SelectItem value="Cold">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                    Cold
+                  </div>
+                </SelectItem>
+              </SelectContent>
+            </Select>
           </div>
 
           <div className="space-y-2">

@@ -406,7 +406,7 @@ function AllLeadsPage() {
                 )}
 
                 {/* Action Buttons */}
-                <div className="grid grid-cols-3 gap-3" onClick={(e) => e.stopPropagation()}>
+                <div className="grid grid-cols-4 gap-2" onClick={(e) => e.stopPropagation()}>
                   <Button 
                     variant="default"
                     className="w-full bg-amber-500 hover:bg-amber-600"
@@ -416,7 +416,7 @@ function AllLeadsPage() {
                     }}
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
-                    View Details
+                    View
                   </Button>
                   <Button 
                     variant="outline"
@@ -427,19 +427,26 @@ function AllLeadsPage() {
                     }}
                   >
                     <PhoneCall className="h-4 w-4 mr-2" />
-                    Call Now
+                    Call
+                  </Button>
+                  <Button 
+                    variant="outline"
+                    className="w-full"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setEditingLead(lead);
+                    }}
+                  >
+                    <Edit className="h-4 w-4 mr-2" />
+                    Edit
                   </Button>
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
-                      <Button variant="outline" className="w-full">
-                        Update Status
+                      <Button variant="ghost" size="icon">
+                        <MoreHorizontal className="h-4 w-4" />
                       </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
-                      <DropdownMenuItem onClick={() => setEditingLead(lead)}>
-                        <Edit className="h-4 w-4 mr-2" />
-                        Edit Lead
-                      </DropdownMenuItem>
                       <DropdownMenuItem 
                         onClick={() => setDeletingLead(lead)}
                         className="text-destructive"

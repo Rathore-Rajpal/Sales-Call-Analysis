@@ -15,6 +15,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 import { supabase, CompanyBrain, BrainDocument, DocumentGroup } from "@/lib/supabase";
 import { storeEmbedding, prepareCompanyInfoForEmbedding, chunkText } from "@/lib/embeddings";
+import Footer from "./Footer";
 import { 
   Brain, 
   Save, 
@@ -1754,6 +1755,7 @@ export default function BrainPage({ onBack }: BrainPageProps) {
 
         </div>
       </ScrollArea>
+      <Footer />
     </div>
   );
 }
