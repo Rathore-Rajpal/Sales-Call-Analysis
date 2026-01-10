@@ -359,8 +359,6 @@ export default function ProjectsPage({ onViewProject, onBack }: ProjectsPageProp
           )}
         </div>
       </header>
-
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20">
       <div className="container mx-auto p-6 max-w-7xl">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
@@ -696,7 +694,8 @@ export default function ProjectsPage({ onViewProject, onBack }: ProjectsPageProp
           </DialogFooter>
         </DialogContent>
       </Dialog>
-    </div>
+
       <Footer />
+    </div>
   );
 }
