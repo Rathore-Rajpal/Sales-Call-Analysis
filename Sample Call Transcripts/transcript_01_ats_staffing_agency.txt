@@ -1,0 +1,81 @@
+CALL TRANSCRIPT - ATS Demo Call
+=====================================
+Date: January 3, 2026
+Duration: 28 minutes
+Prospect: Sarah Martinez, VP of Recruiting - TalentPro Staffing
+Sales Agent: Michael Chen - Ceipal ATS Solutions
+
+---
+
+Michael: Good morning, Sarah! Thanks for taking the time to speak with me today about Ceipal's ATS solution.
+
+Sarah: Good morning, Michael. Yes, we're definitely in the market for a more robust ATS. Our current system is really showing its age.
+
+Michael: I completely understand. Can you tell me a bit about TalentPro? What's your current team size and volume of placements?
+
+Sarah: Sure. We have about 45 recruiters working across multiple industries - IT, healthcare, and finance primarily. We're placing around 800-1000 candidates per year, and we have about 25,000 active candidates in our database.
+
+Michael: That's a solid operation. With that volume, you definitely need a system that can scale. Let me walk you through how Ceipal's ATS is specifically designed for staffing agencies like yours.
+
+Sarah: That would be great.
+
+Michael: First, our ATS is built on a modern cloud architecture, which means you can access it from anywhere. We have native mobile apps for iOS and Android, so your recruiters can work on the go.
+
+Sarah: Mobile access is critical for us. Our recruiters are often at client sites or job fairs.
+
+Michael: Exactly. Now, one of our most powerful features is our AI-powered candidate matching. When a new job req comes in, our system automatically scans your database and ranks candidates based on skills, experience, location, and even past performance data.
+
+Sarah: How accurate is the AI matching? We've tried other systems where the AI was more of a hindrance than a help.
+
+Michael: Great question. Our AI has been trained on millions of successful placements across the staffing industry. We typically see a 75-80% accuracy rate in the top 10 recommended candidates. And the system learns from your team's behavior - when you select or reject candidates, it gets smarter over time.
+
+Sarah: That's impressive. What about integration with job boards? We post to Indeed, LinkedIn, Monster, and several niche boards.
+
+Michael: We have direct integrations with over 50 job boards, including all the ones you mentioned. One-click posting, and all applications come directly into your ATS with parsed resume data. Our resume parsing is industry-leading - we're capturing 95%+ accuracy on key fields.
+
+Sarah: Okay, that would save us hours every week. What about client management? We have about 150 active clients.
+
+Michael: Our CRM functionality is fully integrated. You can track all client interactions, manage contracts, set bill rates and pay rates, and even handle compliance documents all in one place. We also have automated email campaigns for client engagement.
+
+Sarah: What about reporting? We need to track metrics like time-to-fill, submission-to-interview ratios, that kind of thing.
+
+Michael: We have over 100 pre-built reports, plus a custom report builder. You can track every metric you mentioned - time-to-fill, submittal ratios, source of hire, recruiter productivity, revenue per recruiter, margin analysis. All reports can be scheduled and automatically emailed to stakeholders.
+
+Sarah: This sounds really comprehensive. What about pricing? We need to be mindful of our budget.
+
+Michael: Absolutely. For an organization your size - 45 recruiters - we'd be looking at our Professional tier. That would run about $180,000 annually, which breaks down to about $333 per user per month. That includes all the features I mentioned, plus implementation support, training, and ongoing customer success management.
+
+Sarah: That's... actually more reasonable than I expected. Our current system is costing us $220,000 and doesn't have half these features.
+
+Michael: Right, and consider the ROI. Our staffing clients typically see a 40-50% reduction in time-to-fill, which means faster placements and more revenue. If you're placing 800 candidates a year, even a 30% efficiency gain could mean 200+ additional placements.
+
+Sarah: That's a compelling argument. What about implementation time?
+
+Michael: For a firm your size, we typically complete implementation in 6-8 weeks. That includes data migration from your current system, configuration, integrations setup, and full team training. We assign a dedicated implementation manager who works with you through the entire process.
+
+Sarah: What about support after go-live?
+
+Michael: You get 24/7 technical support with response times under 2 hours for critical issues. Plus, you'll have a dedicated Customer Success Manager who does quarterly business reviews and helps you optimize your usage. We also have a robust knowledge base and monthly webinars on new features.
+
+Sarah: This all sounds great. What about compliance? We deal with I-9s, background checks, drug screening...
+
+Michael: We have full compliance management built in. Electronic I-9 with E-Verify integration, background check integrations with all major providers like Sterling and Checkr, and a document management system with audit trails for compliance purposes. We're also SOC 2 Type II certified for data security.
+
+Sarah: Excellent. One more question - what about onboarding? Once we place a candidate, we need to manage their onboarding process.
+
+Michael: We have a full onboarding module. Electronic offer letters with e-signature, automated onboarding checklists, document collection, and you can even integrate with payroll systems. We work with most major payroll providers.
+
+Sarah: I think we need to see a demo with our leadership team. Can you set that up?
+
+Michael: Absolutely! I'd love to do that. Would next week work? I can bring in one of our implementation specialists to answer any technical questions as well.
+
+Sarah: Let me check with my team and get back to you with some times.
+
+Michael: Perfect. I'll send you a follow-up email with some case studies from other staffing firms similar to your size. One client, TechStaff Solutions, saw a 45% increase in placements within the first year of using Ceipal.
+
+Sarah: That would be great. Thanks for your time today, Michael.
+
+Michael: Thank you, Sarah. I'm excited about the possibility of working with TalentPro. Talk soon!
+
+---
+END OF TRANSCRIPT

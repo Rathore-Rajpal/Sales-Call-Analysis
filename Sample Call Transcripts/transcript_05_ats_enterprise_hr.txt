@@ -1,0 +1,105 @@
+CALL TRANSCRIPT - ATS Demo Call
+=====================================
+Date: January 5, 2026
+Duration: 35 minutes
+Prospect: Patricia Williams, CHRO - Meridian Financial Services
+Sales Agent: James Mitchell - Ceipal ATS Solutions
+
+---
+
+James: Good morning, Patricia. Thank you for taking the time to meet with me today regarding Ceipal's ATS solution for Meridian Financial Services.
+
+Patricia: Good morning, James. Yes, we're in the process of evaluating several ATS vendors. We need something that can scale with our growth - we're at 8,000 employees now but expect to be at 12,000 within three years.
+
+James: That's significant growth. Congratulations. Can you walk me through your current recruiting operation?
+
+Patricia: We have a corporate recruiting team of 25 people - mix of recruiters, coordinators, and recruiting ops. We hire across all functions - finance, technology, operations, customer service, sales. We're doing about 1,200 hires per year, but that'll increase to probably 1,800-2,000 with our growth plans.
+
+James: Got it. And you're in how many locations?
+
+Patricia: We have offices in 12 cities across the US, plus we're opening operations in London and Toronto next year. So international capabilities are important to us.
+
+James: Perfect. Ceipal is a global platform - we support multiple languages, currencies, and compliance requirements for over 60 countries. We have customers in Europe, Asia, and Latin America, so we understand multi-country recruiting.
+
+Patricia: Good. What about our tech stack? We use Workday for core HR, Greenhouse for our current ATS, LinkedIn Recruiter for sourcing, and HireVue for video interviews. Any new system needs to play well with these tools.
+
+James: We have pre-built integrations with all of those. Workday integration is bidirectional - we can pull employee data for internal applications and push new hire data back. LinkedIn Recruiter integration lets you import candidate profiles directly. And HireVue interviews can be scheduled and tracked within Ceipal.
+
+Patricia: What about Greenhouse? We have three years of data in there that we need to migrate.
+
+James: We have a dedicated data migration team that handles Greenhouse migrations regularly. They'll map all your fields, bring over candidates, jobs, applications, notes, attachments - everything. We typically achieve 98-99% data fidelity in migrations.
+
+Patricia: Timeline for migration and implementation?
+
+James: For an organization your size, we typically plan 12-14 weeks for full implementation. That breaks down to: 2 weeks for kickoff and requirements gathering, 4 weeks for configuration and data migration, 3 weeks for integration setup and testing, 2 weeks for user training, and 2-3 weeks of parallel running before full cutover.
+
+Patricia: That's thorough. What about change management? Getting 25 recruiters plus hundreds of hiring managers to adopt a new system is always challenging.
+
+James: We provide a comprehensive change management program. That includes train-the-trainer sessions, role-based training for different user types, video tutorials, quick reference guides, and we even have a change management consultant who can work with your team on adoption strategies.
+
+Patricia: What about the candidate experience? That's a big focus for us - we're trying to build our employer brand.
+
+James: Our career site is fully customizable - you can match your brand exactly. It's mobile-responsive, supports one-click apply with LinkedIn, and we have an AI-powered chatbot that can answer candidate questions 24/7. Candidates can also create profiles and set up job alerts.
+
+Patricia: Tell me more about the chatbot. How does it work?
+
+James: The chatbot can answer common questions like "what's the status of my application," "what positions are available in New York," "what benefits does Meridian offer." You can customize the responses based on your FAQs. It can also pre-screen candidates by asking qualifying questions before they formally apply.
+
+Patricia: Does it integrate with our company website?
+
+James: Yes, you can embed it on your careers page or any other page on your website. It's just a simple code snippet.
+
+Patricia: What about diversity and inclusion? We have commitments to improve diverse hiring and we need to track progress.
+
+James: We have robust D&I analytics. You can track demographic data through every stage of the hiring funnel - source, application, screen, interview, offer, hire. We show you where candidates are dropping off and where you might have issues. We also have bias detection in job descriptions and blind resume screening if you want to use it.
+
+Patricia: The bias detection - does it really work, or is it just a checkbox feature?
+
+James: It's quite effective. Our AI has been trained on thousands of job descriptions and can identify gendered language, age-related terms, and other potentially biased phrases. It provides real-time suggestions for more inclusive language. Our customers have seen a 15-20% increase in diverse applicant pools after implementing it.
+
+Patricia: What about requisition approval workflows? We have complex approval processes depending on role level and department budget.
+
+James: Fully configurable approval workflows. You can set up multi-stage approvals based on any criteria - role level, salary, department, location. Approvers get notified, can approve or reject with comments, and you can see the full audit trail. We also support budget tracking at the department level.
+
+Patricia: What about offer letter generation? We have different templates for different role types.
+
+James: We have a template library where you can store multiple offer letter templates. You can use merge fields to auto-populate candidate information, compensation details, start dates, etc. Offers are sent via DocuSign or Adobe Sign for e-signature, and once signed, the data flows to Workday.
+
+Patricia: What about reporting for our executives? Our CEO wants a monthly dashboard of recruiting metrics.
+
+James: We have executive dashboards that show high-level metrics - total hires, time-to-fill, cost-per-hire, offer acceptance rates, diversity stats. These are visual, easy to understand, and can be scheduled to automatically email to stakeholders. You can also give view-only access to executives so they can log in and see real-time data.
+
+Patricia: What about mobile access? Our hiring managers need to review candidates on their phones.
+
+James: We have native iOS and Android apps for hiring managers. They can review candidate profiles, watch video interviews, leave feedback, and approve candidates for the next stage - all from their phone. Recruiters also have full mobile access to manage their workflows.
+
+Patricia: Let's talk about pricing. What are we looking at for 25 recruiting team members, plus we'd need hiring manager licenses for probably 300 people?
+
+James: For Enterprise tier, which is what you'd need for your size and global requirements, we price it at $125,000 annually for your recruiting team, plus $25 per hiring manager per year. So that would be $125,000 plus $7,500 for 300 hiring managers, totaling $132,500 annually.
+
+Patricia: That's actually less than we're paying for Greenhouse. What's included at that price?
+
+James: Everything - unlimited job postings, all integrations we discussed, data migration, full implementation support, 24/7 technical support, dedicated Customer Success Manager, quarterly business reviews, and all future feature updates and enhancements.
+
+Patricia: What about security and compliance? We're heavily regulated as a financial services company.
+
+James: We're SOC 2 Type II certified, GDPR compliant, and we support EEOC and OFCCP compliance reporting. All data is encrypted in transit and at rest, we have role-based access controls, and comprehensive audit logs. We also do annual penetration testing and security audits.
+
+Patricia: Do you have other financial services customers who can speak to the compliance aspects?
+
+James: Absolutely. We work with several banks and financial services firms. I can connect you with Capital Trust Bank - they're similar size and they've been through multiple audits with Ceipal as their ATS. They'd be happy to discuss their experience.
+
+Patricia: That would be valuable. What's the next step?
+
+James: I'd recommend a full platform demo with your team - we can customize it to show workflows specific to your needs. I can also bring in our implementation team to discuss the migration plan in detail, and our customer success team to talk about training and adoption.
+
+Patricia: Let me coordinate with my recruiting leadership team and get back to you with some times. Can you send me customer references and case studies from similar-sized companies?
+
+James: Absolutely. I'll send those over today, along with our security and compliance documentation. I'll also include pricing details and an ROI analysis showing expected time and cost savings.
+
+Patricia: Perfect. Thanks for your time today, James.
+
+James: Thank you, Patricia. I'm excited about the possibility of partnering with Meridian. I'll follow up shortly with those materials.
+
+---
+END OF TRANSCRIPT

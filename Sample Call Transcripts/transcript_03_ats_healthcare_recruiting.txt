@@ -1,0 +1,87 @@
+CALL TRANSCRIPT - ATS Demo Call
+=====================================
+Date: January 5, 2026
+Duration: 25 minutes
+Prospect: Dr. Rachel Anderson, VP of Talent Acquisition - MedStaff Solutions
+Sales Agent: Ryan Patel - Ceipal ATS Solutions
+
+---
+
+Ryan: Good afternoon, Dr. Anderson. Thank you for taking the time to discuss how Ceipal can help MedStaff Solutions with your healthcare recruiting needs.
+
+Rachel: Please, call me Rachel. Thanks for reaching out. We're definitely interested in upgrading our ATS. Healthcare recruiting has unique challenges, and we need a system that understands that.
+
+Ryan: Absolutely, Rachel. Healthcare staffing is one of our strongest verticals. Can you tell me about your current operations?
+
+Rachel: We place nurses, physicians, allied health professionals, and some administrative staff. We have 35 recruiters and we're doing about 1,200 placements per year across 15 states. Our big challenge is credentialing - it's incredibly time-consuming.
+
+Ryan: Credentialing is always the pain point. I'm glad you brought that up because it's one of Ceipal's differentiators in the healthcare space. We have a built-in credentials management system.
+
+Rachel: Tell me more about that.
+
+Ryan: So, our system tracks all professional licenses - nursing licenses, DEA numbers, medical board certifications, malpractice insurance, everything. You can set up alerts for expiring credentials, we verify licenses directly with state boards through API integrations, and we maintain a complete audit trail for compliance.
+
+Rachel: That would be huge for us. We have a full-time person just managing credential tracking in spreadsheets.
+
+Ryan: Exactly. This is fully automated in Ceipal. You can also set up mandatory documents per role type - for example, all RN positions require active license, BLS certification, and professional references. The system won't let you submit a candidate who's missing required credentials.
+
+Rachel: What about skills tracking? We need to match very specific clinical skills - ICU experience, specific equipment certifications, EMR experience.
+
+Ryan: We have a comprehensive skills taxonomy specifically for healthcare. You can create detailed skill profiles for each position, and our AI matching will rank candidates based on exact skill matches. You can also track years of experience with each skill, proficiency levels, and even specific software like Epic or Cerner.
+
+Rachel: Good. What about compliance? We're audited regularly, and we need to demonstrate compliance with Joint Commission standards and state regulations.
+
+Ryan: We're fully compliant with Joint Commission standards, and we've built our system to support state-specific requirements. For example, California has different requirements than Texas. Our system knows these variations and enforces the right rules based on job location.
+
+Rachel: That's exactly what we need. What about background checks and drug screening? Those are mandatory for all our healthcare placements.
+
+Ryan: We integrate with all major background check providers - Sterling, Checkr, Accurate Background. You can order checks directly from the ATS, and results come back into the system automatically. Same with drug screening - we work with LabCorp, Quest Diagnostics, and others. All results are stored securely with proper access controls.
+
+Rachel: What about pay rate and bill rate management? We have complex pay structures with shift differentials, overtime rules, and different rates for different facilities.
+
+Ryan: Our rate management is very robust. You can set up multiple rate cards, manage bill rates and pay rates, calculate margins automatically, and even handle complex scenarios like travel allowances, housing stipends, and completion bonuses. We also have time and expense tracking if you're doing any contract or per diem placements.
+
+Rachel: We do a lot of travel nursing. Can the system handle that?
+
+Ryan: Absolutely. Travel nursing is a major use case for us. We can track housing arrangements, travel reimbursements, contract start and end dates, and even manage contract extensions. You can also set up automated check-ins with travelers during their assignments.
+
+Rachel: What about reporting? Our clients want regular updates on fill rates and time-to-fill.
+
+Ryan: We have pre-built reports specifically for healthcare staffing - fill rates by department, time-to-fill by role type, candidate pipeline by specialty, compliance status reports, credential expiration reports. You can also build custom reports and schedule them to automatically email to clients.
+
+Rachel: This all sounds great. What about the candidate experience? Healthcare professionals are in high demand, so we need to make it easy for them to apply and engage with us.
+
+Ryan: Our candidate portal is mobile-first, which is important because many healthcare professionals are busy and apply during breaks. They can upload credentials, update their profiles, see matching jobs, and even set up alerts for new opportunities. We also have text messaging built in for quick communication.
+
+Rachel: Text messaging is critical. How does that work?
+
+Ryan: You can send individual texts or bulk texts to candidate groups. Common use cases are interview reminders, shift notifications, or credential renewal reminders. It's all two-way, so candidates can respond, and those responses come into the ATS.
+
+Rachel: What about pricing for our size?
+
+Ryan: For 35 recruiters with your volume and the healthcare-specific features, we'd be looking at the Professional tier with healthcare add-ons. That would run approximately $165,000 annually, which is about $4,700 per recruiter per year. That includes the credentials management, all integrations, and dedicated support.
+
+Rachel: How does that compare to other healthcare-focused ATS systems?
+
+Ryan: Most healthcare-specific systems range from $5,000 to $8,000 per recruiter annually and don't have the modern interface and AI capabilities that Ceipal offers. Plus, many of them nickel-and-dime you for integrations and additional features. Our pricing is all-inclusive.
+
+Rachel: What about implementation? We can't afford significant downtime.
+
+Ryan: We understand. Healthcare staffing implementations typically take 6-8 weeks. We'll migrate your candidate database with all credentials and documents, set up your rate cards and compliance rules, integrate with your background check and license verification vendors, and train your team. We do a parallel run for a week before you fully cutover to ensure everything works smoothly.
+
+Rachel: Do you have references from other healthcare staffing firms?
+
+Ryan: Absolutely. We work with over 200 healthcare staffing companies. I can connect you with HealthForce Staffing - they're about your size, also do travel nursing, and they've been with us for 3 years. They'd be happy to share their experience.
+
+Rachel: That would be helpful. I'd also like to see a demo focused on the credentials management and compliance features.
+
+Ryan: Perfect. I can set that up for next week. I'll bring in our healthcare solutions specialist who can do a deep dive on credentials and compliance specifically.
+
+Rachel: Great. Send me some times and I'll coordinate with my team.
+
+Ryan: Will do. I'll also send over our healthcare staffing case study and a feature comparison sheet. Thank you for your time today, Rachel.
+
+Rachel: Thank you, Ryan. Looking forward to the demo.
+
+---
+END OF TRANSCRIPT

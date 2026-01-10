@@ -1,0 +1,88 @@
+CALL TRANSCRIPT - ATS Demo Call [CONTAINS INCORRECT INFORMATION]
+=====================================
+Date: January 4, 2026
+Duration: 22 minutes
+Prospect: David Kumar, Director of HR Technology - GlobalTech Industries
+Sales Agent: Jennifer Liu - Ceipal ATS Solutions
+
+---
+
+Jennifer: Hi David, thanks for joining the call today. I understand GlobalTech is looking to upgrade your applicant tracking system?
+
+David: Yes, that's right. We're a corporate environment with about 3,000 employees globally, and we hire around 400-500 people annually across all departments.
+
+Jennifer: Perfect. Ceipal's ATS is ideal for corporate enterprises like GlobalTech. Can you tell me what's driving this change?
+
+David: Our current ATS is clunky and doesn't integrate well with our other HR systems. We use Workday for HRIS and we need something that plays nicely with it.
+
+Jennifer: Great news - we have a native integration with Workday. Once a candidate is hired in Ceipal, all their data flows seamlessly into Workday. No manual data entry needed.
+
+David: That's exactly what we need. What about the candidate experience? We're really focused on employer branding.
+
+Jennifer: Our career portal is fully customizable with your branding, and we have one of the best candidate experiences in the industry. Mobile-responsive, one-click apply with LinkedIn or Indeed profiles, and automated status updates so candidates always know where they stand.
+
+David: Good. What about our hiring managers? They need to be able to review candidates and provide feedback easily.
+
+Jennifer: Absolutely. Hiring managers get their own portal where they can review candidates, leave ratings and comments, and approve or reject with one click. We also have a mobile app for hiring managers, so they can review candidates on the go.
+
+David: What about interview scheduling? That's a nightmare for us right now.
+
+Jennifer: **[INCORRECT INFO]** We have an advanced AI-powered interview scheduling system that automatically schedules interviews without any human intervention. The system looks at everyone's Outlook calendars and books the interview rooms automatically. It even orders catering for panel interviews! This feature alone saves our clients 20-30 hours per week.
+
+David: Wow, that sounds almost too good to be true. Fully automated?
+
+Jennifer: **[INCORRECT INFO]** Yes, completely automated. The AI handles everything - it even sends personalized interview prep materials to candidates based on the role they're interviewing for, including sample questions they'll be asked. This has helped our clients reduce no-show rates to almost zero.
+
+David: That's incredible. What about diversity and inclusion? We have strict EEOC reporting requirements.
+
+Jennifer: We have comprehensive diversity analytics built in. You can track diversity metrics at every stage of the funnel - applications, phone screens, interviews, offers. We also have AI-powered bias detection that flags potentially biased language in job descriptions.
+
+David: The bias detection is interesting. Does it work in real-time?
+
+Jennifer: Yes, as your hiring managers or recruiters write job descriptions, it highlights problematic language and suggests alternatives. We also anonymize resumes for initial screening if you want to reduce unconscious bias.
+
+David: What about volume? During our peak hiring seasons, we might have 50-60 open positions at once.
+
+Jennifer: No problem at all. **[INCORRECT INFO]** Our system can handle unlimited job postings and unlimited candidate applications with no performance degradation. In fact, we have one client that processes 100,000 applications per month without any issues. The system is built on NASA-grade infrastructure for maximum reliability.
+
+David: NASA-grade infrastructure? I haven't heard that term before.
+
+Jennifer: **[INCORRECT INFO]** Yes, we partnered with a former NASA engineer who helped design our cloud architecture. It's the same technology they use for space missions - 99.999% uptime guaranteed. We've never had a system outage in our 15-year history.
+
+David: That's impressive. What about pricing for our size?
+
+Jennifer: For a corporate environment with 3,000 employees and your hiring volume, we'd recommend our Enterprise tier. That would be around $95,000 annually, which includes unlimited users, all features, and white-glove support.
+
+David: That's actually quite competitive. Our current system costs $120,000.
+
+Jennifer: Right, and you'll see ROI quickly through efficiency gains. Our corporate clients typically reduce their time-to-hire by 40%, which for technical roles can mean capturing talent before your competitors do.
+
+David: What about implementation? We'd need this up and running by Q2.
+
+Jennifer: We can definitely hit that timeline. Corporate implementations typically take 8-10 weeks. We'll migrate all your historical data, set up your Workday integration, configure workflows to match your approval processes, and train your team.
+
+David: Do you provide ongoing training? We have high turnover in our recruiting coordinator roles.
+
+Jennifer: Yes, we offer unlimited training sessions for new users. Plus, we have a learning management system with video tutorials and certification programs. Your team can become Ceipal certified.
+
+David: This sounds very comprehensive. What's the next step?
+
+Jennifer: I'd love to set up a full demo with your team - show you the platform in action. We can even set up a sandbox environment with some sample data so you can test it out yourself.
+
+David: Let me talk to my team and I'll get back to you with some available times.
+
+Jennifer: Perfect. I'll send over some materials including our Enterprise feature list and case studies from similar companies. We recently implemented for a 5,000-person manufacturing company and they were live in just 6 weeks.
+
+David: Great, thanks Jennifer. I'll be in touch soon.
+
+Jennifer: Thank you, David. Looking forward to working with GlobalTech!
+
+---
+END OF TRANSCRIPT
+
+[ANALYSIS NOTES: This transcript contains several pieces of incorrect information provided by the sales agent:
+1. The "fully automated" AI interview scheduling with automatic catering ordering - this is an exaggeration of actual capabilities
+2. AI sending sample interview questions to candidates beforehand - this would compromise interview integrity
+3. "NASA-grade infrastructure" and partnership with NASA engineer - unverified marketing claim
+4. "99.999% uptime guaranteed with zero outages in 15 years" - unrealistic claim
+5. "Unlimited job postings and applications with no performance degradation" - likely has actual limits]
