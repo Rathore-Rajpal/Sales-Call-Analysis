@@ -838,7 +838,7 @@ export default function AnalysisGuidePage({ onBack }: AnalysisGuidePageProps) {
                 <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 via-accent-blue/10 to-success/10 border border-primary/20 rounded-lg">
                   <h4 className="font-semibold mb-3 text-lg">Processing Time</h4>
                   <div className="grid sm:grid-cols-3 gap-4">
-                    <div className="text-center p-3 bg-background/50 rounded-lg">
+                    <div class     Name="text-center p-3 bg-background/50 rounded-lg">
                       <Clock className="h-6 w-6 mx-auto mb-2 text-primary" />
                       <div className="text-2xl font-bold text-primary">30s</div>
                       <div className="text-xs text-muted-foreground mt-1">Transcript Input</div>

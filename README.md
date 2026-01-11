@@ -178,15 +178,41 @@ VITE_SUPABASE_URL=your_supabase_project_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-### Step 4: Supabase Setup
+### Step 4: Database Setup
 
 1. Create a new Supabase project
-2. Run the migrations in `supabase/migrations/`
+2. Import the database schema and data from the `Backend/` folder:
+   ```bash
+   # Connect to your Supabase database
+   psql -h db.your-project-ref.supabase.co -U postgres -d postgres
+   
+   # Run the schema file
+   \i Backend/schema.sql
+   
+   # Run the data file
+   \i Backend/data.sql
+   ```
+   
+   Or use the Supabase dashboard SQL editor to run the contents of:
+   - `Backend/schema.sql` - Creates all tables, functions, triggers, and indexes
+   - `Backend/data.sql` - Inserts sample data
+
 3. Set up environment variables in Supabase dashboard:
    - `GEMINI_API_KEY` - Your Google Gemini API key
    - `OPENAI_API_KEY` - Your OpenAI API key
 
-### Step 5: Deploy Edge Functions
+### Step 5: N8N Workflow Setup (Optional)
+
+The `Backend/` folder contains an N8N workflow file for automation:
+- `Ceipal_Call_Analysis_Backend_Demo (2).json` - Import this into N8N for automated workflows
+
+To use:
+1. Install N8N locally or use N8N cloud
+2. Import the workflow file
+3. Configure credentials and endpoints
+4. Activate the workflow
+
+### Step 6: Deploy Edge Functions
 
 ```bash
 # Install Supabase CLI
@@ -205,7 +231,7 @@ supabase functions deploy regenerate-embeddings
 supabase functions deploy regenerate-project-embeddings
 ```
 
-### Step 6: Start Development Server
+### Step 7: Start Development Server
 
 ```bash
 npm run dev
@@ -259,6 +285,10 @@ The application will be available at `http://localhost:3000`
 
 ```
 Sales-Call-Analysis/
+├── Backend/                # Backend resources
+│   ├── schema.sql         # Complete database schema (tables, functions, triggers, indexes)
+│   ├── data.sql           # Sample data inserts
+│   └── Ceipal_Call_Analysis_Backend_Demo (2).json  # N8N workflow
 ├── src/
 │   ├── components/          # React components
 │   │   ├── ui/             # shadcn/ui components
@@ -282,9 +312,10 @@ Sales-Call-Analysis/
 │   │   ├── generate-project-embedding/
 │   │   ├── match-documents/
 │   │   └── regenerate-embeddings/
-│   └── migrations/         # Database migrations
+│   └── migrations/         # Database migrations (deprecated - use Backend/schema.sql)
+├── Sample Call Transcripts/ # Sample audio transcripts for testing
 ├── public/                 # Static assets
-└── docs/                   # Documentation
+└── docs/                   # Project documentation
 
 ```
 
